@@ -1,0 +1,174 @@
+html,body{
+	width: 100%;
+	height: 100%;
+	min-width: 1280px;
+	min-height: 872px;
+	position: relative;
+}
+html,body,div,ul,li,img,p,h2,span
+{
+    margin: 0;
+    padding: 0;
+}
+
+/***header 开始 ***/
+.header
+{
+    position: absolute;
+    width: 100%;
+    height: 78px;
+    background-color: #ed871b;   
+}
+.header_transparent
+{
+    background-color: transparent;    
+}
+.header__wrapper
+{
+    position: relative;
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+}
+.header__wrapper_borderBottom
+{
+    border-bottom: solid 1px #ffffff;
+}
+.header__logo
+{
+    position: absolute;
+    width: 246px;
+    height: 38px;
+    left: 28px;
+    margin-top: -19px;
+    top: 50%; 
+    background: url(../images/common/logo.png) no-repeat;
+    background-size: contain;      
+}
+/***header 结束 ***/
+
+/***menu 开始 ***/
+.menu
+{
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 7890;
+}
+.menu__btnMenuOpen
+{
+    position: absolute;
+    width: 106px;
+    height: 78px;
+    right: 0;
+    background: url(../images/common/btnMenuOpen.png) no-repeat center center;
+    cursor: pointer;
+}
+.menu__open
+{
+    position: absolute;
+    width: 357px;
+    height: 100%;
+    right: 0;
+    background-color: #ed871b;
+    display: none;
+    overflow: hidden;
+}
+.menu__btnMenuClose
+{
+    position: absolute;
+    width: 106px;
+    height: 78px;
+    right: 0;
+    background: url(../images/common/btnMenuClose.png) no-repeat center center;
+    cursor: pointer;
+}
+.menu ul
+{
+    margin-top: 78px;    
+}
+.menu li
+{
+    list-style-type: none;
+}
+.menu a
+{
+    font-family: "Arial";
+    display: block;
+    text-decoration: none;
+    color: #ffffff;    
+    font-size: 29px;
+    padding: 1.5em 1.8em;    
+}
+.menu a:hover
+{
+    background-color: #f6a833;
+}
+/***menu 结束 ***/
+
+
+
+/*** 手机 开始 ***/
+@media screen and (max-width:480px)
+{
+    html,body
+    {
+        min-width: auto;
+        min-height: auto;
+    }
+    .header
+    {
+        width: 100%;
+        height: 40px;
+    }
+    .header__wrapper
+    {
+        width: 100%;
+    }  
+    .header__logo
+    {
+        width: 123px;
+        height: 19px;        
+        margin-left: -61.5px;
+        margin-top: -9.5px;
+        left: 50%;
+        top: 50%;
+        z-index: 7891;
+    }
+    /*
+    .menu
+    {
+        width: 100%;
+    }
+    */  
+    .menu__btnMenuOpen
+    {
+        width: 40px;
+        height: 40px;
+        background-size: 15px 15px;
+    }
+    .menu__open
+    {
+        width: 100vw;
+    }
+    .menu__btnMenuClose
+    {
+        width: 40px;
+        height: 40px;
+        background-size: 15px 15px;
+    }
+    .menu ul
+    {
+        margin-top: 40px;    
+    }
+    .menu a
+    {
+        font-size: 18px;
+    }
+}
+/*** 手机 结束 ***/
+
+
+
+

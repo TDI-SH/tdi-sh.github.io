@@ -1,0 +1,362 @@
+.home
+{
+    position: relative;
+    top:78px;
+    width: 1280px;
+    margin: 0 auto;
+    color: #000000;
+    font-family: 'Arial';
+    
+}
+.home__headline
+{
+    color: #023062;
+    font-size: 48px;
+    text-align: center;
+    line-height: 104px;
+    moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select:none;
+    -khtml-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.home__copy
+{
+    color: #435152;
+    font-size: 16px;
+    text-align: center;
+    line-height: 25px;
+    height: 50px;
+    moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select:none;
+    -khtml-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.home__bg{
+    width: 1283px;
+    height: 734px;
+    background: url(../images/home/bg.png) no-repeat;
+    position: absolute;
+    top: 230px;
+    left: 50%;
+    margin-left: -642px;
+}
+.home__map
+{
+    width: 784px;
+    height: 784px;
+    border-radius: 392px;
+    background-color: #f6a833;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 30px;
+    position: relative;
+    -webkit-transform:rotate(0deg)
+}
+.home__map__wrapper
+{
+    width: 1551px;
+    height: 733px;
+    background: url(../images/home/map.png) no-repeat;
+    position: absolute;
+    top: 33px;
+    left: -750px;
+    cursor: pointer;
+}
+/*shanghai*/
+.sh-icon{
+    width: 50px;
+    height: 50px;
+    background: url(../images/home/icon-sh.png) no-repeat center;
+    background-size: 21px 21px;
+    position: absolute;
+    top: 328px;
+    left: 1238px;
+    cursor: pointer;
+    z-index: 2;
+}
+.sh-pop{
+    width: 310px;
+    height: 368px;
+    background: url(../images/home/pop-sh.png) no-repeat;
+    position: absolute;
+    top: 60px;
+    left: 1196px;
+    display: none;
+    z-index: 1;
+}
+.sh-pop .pop-txt{
+    width: 165px;
+    height: 119px;
+    position: absolute;
+    top: 105px;
+    left: 70px;
+    color: #023062;
+}
+.sh-pop .pop-txt p.title{
+    width: 165px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.sh-pop .pop-txt p.main{
+    width: 165px;
+    height: auto;
+    font-size: 14px;
+    line-height: 16px;
+}
+.sh-pop .pop-btn{
+    width: 182px;
+    height: 40px;
+    background: url(../images/home/pop-btn.png) no-repeat;
+    position: absolute;
+    top: 224px;
+    left: 61px;
+    cursor: pointer;
+}
+/*Singapore*/
+.sg-icon{
+    width: 50px;
+    height: 50px;
+    background: url(../images/home/pop-icon.png) no-repeat center;
+    background-size: 12px 12px;
+    position: absolute;
+    top: 453px;
+    left: 1159px;
+    z-index: 2;
+    cursor: pointer;
+}
+.sg-pop{
+    width: 310px;
+    height: 321px;
+    background: url(../images/home/pop-sg.png) no-repeat;
+    position: absolute;
+    top: 231px;
+    left: 1115px;
+    display: none;
+    z-index: 1;
+}
+.sg-pop .pop-txt{
+    width: 165px;
+    height: 119px;
+    position: absolute;
+    top: 105px;
+    left: 70px;
+    color: #023062;
+}
+.sg-pop .pop-txt p.title{
+    width: 165px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.sg-pop .pop-txt p.main{
+    width: 165px;
+    height: auto;
+    font-size: 14px;
+    line-height: 16px;
+}
+/*Hong Kong*/
+.hk-icon{
+    width: 50px;
+    height: 50px;
+    background: url(../images/home/pop-icon.png) no-repeat center;
+    background-size: 12px 12px;
+    position: absolute;
+    top: 362px;
+    left: 1197px;
+    z-index: 2;
+    cursor: pointer;
+}
+.hk-pop{
+    width: 310px;
+    height: 321px;
+    background: url(../images/home/pop-hk.png) no-repeat;
+    position: absolute;
+    top: 140px;
+    left: 1153px;
+    display: none;
+    z-index: 1;
+}
+.hk-pop .pop-txt{
+    width: 165px;
+    height: 119px;
+    position: absolute;
+    top: 105px;
+    left: 70px;
+    color: #023062;
+}
+.hk-pop .pop-txt p.title{
+    width: 165px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.hk-pop .pop-txt p.main{
+    width: 165px;
+    height: auto;
+    font-size: 14px;
+    line-height: 16px;
+}
+/*New York*/
+.ny-icon{
+    width: 50px;
+    height: 50px;
+    background: url(../images/home/pop-icon.png) no-repeat center;
+    background-size: 12px 12px;
+    position: absolute;
+    top: 259px;
+    left: 435px;
+    z-index: 2;
+    cursor: pointer;
+}
+.ny-pop{
+    width: 310px;
+    height: 368px;
+    background: url(../images/home/pop-ny.png) no-repeat;
+    position: absolute;
+    top: -10px;
+    left: 392px;
+    display: none;
+    z-index: 1;
+}
+.ny-pop .pop-txt{
+    width: 165px;
+    height: 160px;
+    position: absolute;
+    top: 105px;
+    left: 70px;
+    color: #023062;
+    overflow: auto;
+}
+.ny-pop .pop-txt p.title{
+    width: 165px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.ny-pop .pop-txt p.main{
+    width: 165px;
+    height: auto;
+    font-size: 14px;
+    line-height: 16px;
+}
+/*London HQ*/
+.ld-cion{
+    width: 50px;
+    height: 50px;
+    background: url(../images/home/pop-icon.png) no-repeat center;
+    background-size: 12px 12px;
+    position: absolute;
+    top: 211px;
+    left: 724px;
+    z-index: 2;
+    cursor: pointer;
+}
+.ld-pop{
+    width: 310px;
+    height: 368px;
+    background: url(../images/home/pop-ld.png) no-repeat;
+    position: absolute;
+    top: -58px;
+    left: 681px;
+    display: none;
+    z-index: 1;
+}
+.ld-pop .pop-txt{
+    width: 165px;
+    height: 160px;
+    position: absolute;
+    top: 105px;
+    left: 70px;
+    color: #023062;
+    overflow: auto;
+}
+.ld-pop .pop-txt p.title{
+    width: 165px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.ld-pop .pop-txt p.main{
+    width: 165px;
+    height: auto;
+    font-size: 14px;
+    line-height: 16px;
+}
+/*base code*/
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+/*the animation definition*/
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1)
+  }
+  50% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1)
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1)
+  }
+}
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1)
+  }
+  50% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    -ms-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1)
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1)
+  }
+}
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
