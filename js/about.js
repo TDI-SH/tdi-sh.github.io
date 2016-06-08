@@ -327,9 +327,8 @@
     var endX=null;
     var dir=null;
     function handleDown(e)
-    {
-        e.preventDefault();
-        
+    {        
+        //e.preventDefault();
         //console.log('mouse down',e.target);
         isDown=true;
         lastX=getPosition(e).x;   
@@ -337,7 +336,7 @@
     
     function handleMove(e)
     {
-        e.preventDefault();        
+        //e.preventDefault();
         if(isDown)
         {
             var nowX=getPosition(e).x;
@@ -351,7 +350,7 @@
     
     function handleUp(e)
     {
-        e.preventDefault(); 
+        //e.preventDefault();
        
         //console.log('mouseup',e.target);
         
