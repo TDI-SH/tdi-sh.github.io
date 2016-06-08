@@ -9,10 +9,14 @@
     var menuOpen=document.querySelector('.menu__open');
     
     btnMenuOpen.addEventListener('click',handleMenuOpen,false);
-    btnMenuOpen.addEventListener('touchstart',handleMenuOpen,false);
+    //btnMenuOpen.addEventListener('touchstart',handleMenuOpen,false);
     
     btnMenuClose.addEventListener('click',handleMenuClose,false);
+<<<<<<< Updated upstream
     //btnMenuClose.addEventListener('touchstart click',handleMenuClose,false);
+=======
+    //btnMenuClose.addEventListener('touchstart',handleMenuClose,false);
+>>>>>>> Stashed changes
 
     
     function handleMenuOpen(e)
