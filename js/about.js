@@ -35,8 +35,8 @@
     //添加事件侦听
     window.addEventListener('resize',handleResize,false);
     
-    btnLeft.addEventListener('click',handleClickLeft,false);
-    btnRight.addEventListener('click',handleClickRight,false);
+    btnLeft.addEventListener('click touchstart',handleClickLeft,false);
+    btnRight.addEventListener('click touchstart',handleClickRight,false);
         
     cardsWrapper.addEventListener('mousewheel',handleWheel,false);
     cardsWrapper.addEventListener('DOMMouseScroll',handleWheel,false);//for firefox
