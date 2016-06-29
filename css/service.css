@@ -1,0 +1,158 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#department {
+  width: 1280px;
+  height: 794px;
+  position: relative;
+  overflow: hidden;
+  top: 78px;
+  display: none;
+}
+#department section {
+  float: left;
+  position: relative;
+}
+#department section.section-1 {
+  width: 639px;
+  height: 397px;
+  background-image: url('../images/service/main/or_1.jpg');
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center center;
+}
+#department section.section-1.hover {
+  background-image: url('../images/service/main/or_1_hover.jpg');
+  background-repeat: no-repeat;
+}
+#department section.section-1.hover .btm-txt, #department section.section-1.hover .arrow, #department section.section-1.hover .bord {
+  display: block;
+}
+#department section.section-2 {
+  width: 639px;
+  height: 397px;
+  background-image: url('../images/service/main/or_2.jpg');
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center center;
+}
+#department section.section-2.hover {
+  background-image: url('../images/service/main/or_2_hover.jpg');
+  background-repeat: no-repeat;
+}
+#department section.section-2.hover .btm-txt, #department section.section-2.hover .arrow, #department section.section-2.hover .bord {
+  display: block;
+}
+#department section.section-3 {
+  width: 639px;
+  height: 397px;
+  background-image: url('../images/service/main/or_3.jpg');
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center center;
+}
+#department section.section-3.hover {
+  background-image: url('../images/service/main/or_3_hover.jpg');
+  background-repeat: no-repeat;
+}
+#department section.section-3.hover .btm-txt, #department section.section-3.hover .arrow, #department section.section-3.hover .bord {
+  display: block;
+}
+#department section.section-4 {
+  width: 639px;
+  height: 397px;
+  background-image: url('../images/service/main/or_4.jpg');
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center center;
+}
+#department section.section-4.hover {
+  background-image: url('../images/service/main/or_4_hover.jpg');
+  background-repeat: no-repeat;
+}
+#department section.section-4.hover .btm-txt, #department section.section-4.hover .arrow, #department section.section-4.hover .bord {
+  display: block;
+}
+#department section p {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 397px;
+  color: #fff;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 480px) {
+  html, body {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  #department {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    left: 0;
+    margin-left: 0;
+    top: 40px;
+  }
+  #department section.section-1 {
+    width: 100vw;
+    height: 57vw;
+  }
+  #department section.section-1 .arrow {
+    top: 25.5vw;
+    left: 60vw;
+  }
+  #department section.section-1 .bord {
+    top: 32vw;
+    left: 41vw;
+  }
+  #department section.section-2 {
+    width: 100vw;
+    height: 57vw;
+  }
+  #department section.section-2 .arrow {
+    top: 25.5vw;
+    left: 60vw;
+  }
+  #department section.section-2 .bord {
+    top: 32vw;
+    left: 41vw;
+  }
+  #department section.section-3 {
+    width: 100vw;
+    height: 57vw;
+  }
+  #department section.section-3 .arrow {
+    top: 25.5vw;
+    left: 65vw;
+  }
+  #department section.section-3 .bord {
+    top: 32vw;
+    left: 36.5vw;
+  }
+  #department section.section-4 {
+    width: 100vw;
+    height: 57vw;
+  }
+  #department section.section-4 .arrow {
+    top: 25.5vw;
+    left: 70vw;
+  }
+  #department section.section-4 .bord {
+    left: 32.5vw;
+    top: 32vw;
+  }
+  #department section p {
+    line-height: 57vw;
+  }
+}

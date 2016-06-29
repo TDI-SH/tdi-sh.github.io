@@ -1,0 +1,312 @@
+html,body
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-width: 960px;
+}
+html
+{
+    font-size: 62.5%;
+}
+/*** studio 开始 ***/
+.studio
+{
+    position: absolute;
+    top: 78px;
+    width: 100%;
+    height: calc(100% - 78px);    
+    background: url('../images/service/studio/bg.jpg') center center no-repeat;
+    background-size: cover;
+    font-family: Helvetica;
+    color: #ffffff;
+}
+.studio__left
+{
+    position: relative;
+    width: 32%;    
+    height: 100%;
+    background-color: rgba(28, 101, 176, 0.98);
+    box-sizing: border-box;
+    padding:0 4.5rem;    
+    overflow: hidden;
+}
+.studio__left>h2
+{
+    padding-top: 13rem;
+    padding-bottom: 4.5rem;
+    font-size: 9.6rem;
+    font-weight: 100;      
+}
+.studio__left>p
+{
+    padding-bottom: 3.2rem;
+    font-size: 1.8rem;
+    font-weight:  300;
+}
+.studio__left>hr
+{
+    width: 75px;
+    height: 0;
+    border: none;
+    border-top: solid 3px #ffffff;
+    margin: 0;
+    padding: 0; 
+}
+.studio__left>a
+{
+    display: block;
+    color: #ffda06;
+    font-size: 1.9rem;
+    padding-top: 6.5rem;  
+    cursor: pointer; 
+}
+/*** studio 结束 ***/
+
+/*** studioworks 开始 ***/
+.studio__ourworks
+{
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;    
+}
+.studio__btnLeft
+{
+    position: absolute;
+    left: 4.5rem;
+    top: 3.2rem;
+    width: 41px;
+    height: 36px;
+    background: url('../images/service/studio/btnLeft.png') no-repeat;
+    cursor: pointer; 
+}
+.studio__right
+{
+    position: absolute;
+    left: 32%;
+    top:0;
+    width: 68%;
+    height: 100%;    
+}
+.studio__cards
+{
+    position: absolute;   
+    height: 100%;
+    background-color: #1c65b0;
+    overflow-y: auto;    
+}
+.studio__card
+{
+    position: relative;
+    float: left;
+    width: calc(50% - 10px);
+    overflow: hidden;
+    cursor: pointer;
+}
+.studio__card:after/*important for mouseover event handler*/
+{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0);
+    width: 100%;
+    height: 100%;          
+}
+.studio__card>img
+{
+    width: 100%;
+}
+.studio__card_over
+{
+    opacity: 0;
+    position: absolute;
+    left: 3%;
+    top: 3%;
+    width: 94%;
+    height: 94%;
+    background-color: rgba(54,127,202,0.77);
+    
+    -webkit-transition: opacity 0.28s cubic-bezier(.25,.78,.1,.98);
+    -moz-transition: opacity 0.28s cubic-bezier(.25,.78,.1,.98);
+    -o-transition: opacity 0.28s cubic-bezier(.25,.78,.1,.98);
+    transition: opacity 0.28s cubic-bezier(.25,.78,.1,.98);
+}
+.studio__card_over_show
+{
+    opacity: 1;
+}
+.studio__card_over>p
+{
+    position: absolute;
+    font-size: 1.8rem;
+    right: 60px;
+    bottom: 20px;
+}
+.studio__card__btnRight
+{
+    position: absolute;
+    right: 16px;
+    bottom: 12px;
+    width: 31px;
+    height: 27px;
+    background: url('../images/service/studio/btnRight.png') no-repeat;
+    cursor: pointer;     
+}
+/*** studioworks 结束 ***/
+
+/*** studio__card__detail 开始***/
+.studio__card__details
+{
+    display: none;      
+}
+.studio__card__detail
+{
+    display: none;
+    position: absolute;
+    height: 100%;
+    background-color: #256fbb;
+    overflow-y: auto;
+}
+.studio__card__detail__headimg
+{
+    position: relative;
+    height: 375px;
+    overflow: hidden;
+}
+.studio__card__detail__headimg>img
+{
+    width: 100%;
+}
+.studio__card__detail>h3
+{
+    font-size: 3rem;
+    font-weight: 300;
+    padding: 5.6rem 5rem 3.6rem 5rem;
+}
+.studio__card__detail>p
+{
+    font-size: 1.8rem;
+    font-weight: 300;
+    padding: 0 5rem 3rem 5rem;
+}
+.studio__card__detail__btnClose
+{
+    position: absolute;
+    top: 20px;    
+    right: 20px;
+    width: 29px;
+    height: 29px;
+    padding: 10px;    
+    background: url('../images/service/studio/btnClose.png') center center no-repeat;
+    cursor: pointer;     
+}
+/*** studio__card__detail 结束***/
+
+
+@media screen and (max-width:1280px)
+{
+    .studio__left
+    {
+        padding:0 1rem;
+    }
+    .studio__left>h2
+    {
+        font-size: 8rem;
+    }
+    .studio__btnLeft
+    {
+        left: 1rem;
+    }             
+}
+
+@media screen and (max-width:480px)
+{
+    html,body
+    {        
+        min-width: auto;
+    }
+    .studio
+    {
+        top: 40px;
+        height: calc(100% - 40px);    
+    }
+    .studio__left
+    {
+        width: 100%;    
+        height: 50%;
+        padding:0 2rem;    
+    }
+    .studio__left>h2
+    {
+        padding-top: 5rem;
+        padding-bottom: 1rem;
+        font-size: 4.8rem;
+    }
+    .studio__left>p
+    {
+        padding-bottom: 1rem;
+        font-size: 1.2rem;
+    }
+    .studio__left>hr
+    {
+        width: 40px;
+        height: 0;
+        border-top: solid 2px #ffffff;
+        
+    }
+    .studio__left>a
+    {
+        font-size: 1.5rem;        
+        padding: 1rem 0;
+    }
+    .studio__btnLeft
+    {
+        position: absolute;
+        left: auto;
+        right: 2rem;        
+    }
+    
+    .studio__right
+    {
+        left: 0;
+        top:50%;
+        width: 100%;
+        height: 50%;    
+    }
+    .studio__cards
+    {
+        overflow-y: visible;   
+    }    
+    .studio__card
+    {
+        width: 100%;
+        height: 100%;       
+    }
+    .studio__card__detail
+    {        
+        height: auto;
+        overflow-y: visible;
+    }
+    .studio__card__detail__headimg
+    {
+        height: 150px;
+    }              
+}
+
+@media screen and (max-width:320px)
+{
+    .studio__left>h2
+    {
+        padding-top: 1rem;
+    }    
+}
+
+
+
+
+
+
+

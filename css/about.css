@@ -1,0 +1,420 @@
+html
+{
+    -ms-touch-action: none;
+    touch-action: none;    
+}
+html,body
+{
+    position: relative;
+    height: 100%;
+    min-height: 640px;    
+}
+.about
+{    
+    position: absolute;
+    width: 66%;
+    height: calc(100% - 78px);
+    left: 17%;
+    top: 78px;
+    font-family: "Helvetica";
+    font-weight: lighter;
+    /*border: solid black 1px;*/
+}
+
+/*** 卡片 开始 ***/
+.about__cards__wrapper
+{    
+    position: absolute;
+    width: 83%;
+    height: 100%;
+    left: 8.5%;
+    overflow: hidden;
+    /*border: solid #ff0000 1px;*/
+}
+.about__cards
+{
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    left: 0px;
+    top: 20%;
+    /*border: solid #00ff00 1px;*/
+}
+.about__card
+{
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    /*border: solid #0000ff 1px;*/
+}
+.about__card__title
+{
+    color: #002f62;
+    font-size: 2vw;    
+    text-align: center;
+    width: 100%;
+    height: 18%;    
+    /*border: solid #ffff00 1px;*/
+}
+.about__card__content
+{
+    position: relative;
+    height: 82%;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border: solid #003061 1px;      
+}
+.about__card__content__img
+{
+    position: absolute;      
+    width: 10vw;
+    height: 10vw;
+    margin-left: -5vw;
+    top: 8%;  
+    left: 50%;
+    border-radius: 50%;
+    overflow: hidden;    
+}
+.about__card__content__img_byHeight
+{
+    width: 19vh;
+    height: 19vh;
+    margin-left: -9.5vh;    
+}
+.about__card__content__img>img
+{
+    position: absolute;
+    width: 100%;
+}
+.about__card__content__headline
+{
+    position: absolute;
+    width: 100%;
+    top: 60%;
+    font-size: 1vw;
+    text-align: center;
+    color: #a3a6a9;
+}
+.about__card__content__headline_byHeight
+{
+    font-size: 2vh;
+}
+.about__card__content__btnReadMore
+{
+    position: absolute;
+    width: 10vw;
+    height: 3vw;
+    margin-left: -5vw;
+    left: 50%;
+    bottom: 6%;
+    color: #ffffff;    
+    font-size: 1vw;
+    line-height: 3vw;
+    text-align: center;
+    border-radius: 1.5vw;
+    background-color: #3da3dc;
+    cursor: pointer;  
+}
+.bout__card__content__btnReadMoreb_byHeight
+{
+    height: 5vh;
+    width: 17vh;
+    margin-left: -8.5vh;
+    font-size: 2vh;
+    line-height: 5vh;
+    border-radius: 2.5vh;
+}
+
+.about__cards>div:nth-child(1)
+{
+    left: 0em;    
+}
+.about__cards>div:nth-child(2)
+{
+    left: 1em;    
+}
+.about__cards>div:nth-child(3)
+{
+    left: 2em;    
+}
+.about__cards>div:nth-child(4)
+{
+    left: 3em;    
+}
+.about__cards>div:nth-child(5)
+{
+    left: 4em;    
+}
+.about__cards>div:nth-child(6)
+{
+    left: 5em;    
+}
+.about__cards>div:nth-child(7)
+{
+    left: 6em;    
+}
+
+/*** 卡片 结束 ***/
+/*** 详细信息 开始 ***/
+.about__details__wrapper
+{
+    position: absolute;
+    width: 83%;
+    height: 83%;    
+    top: 8.5%;
+    left: 8.5%;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border: solid #003061 1px;
+    background-color: #ffffff;
+    overflow: hidden;
+    display: none;
+}
+.about__details
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    font-size: 1060px;       
+}
+.about__detail
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.about__detail__img
+{
+    height: 30%;
+    background: url(../images/about/headImg1.jpg) no-repeat center center;
+    background-size: cover;    
+}
+.about__detail>img
+{
+    width: 100%;
+    display: block;
+}
+.about__detail__headline
+{
+    color: #ffffff;
+    font-size: 1.25vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 5vw;
+}
+.about__detail__headline>span
+{
+    font-size: 2vw;        
+}
+.about__detail__content
+{
+    color: #909090;
+    font-size: 1vw;
+    height: 70%;
+    overflow-y: auto;
+}
+.about__detail__content>h2
+{    
+    font-size: 1.5vw;
+    padding: 0 1.5vw;
+    margin-top: 1.5vw;    
+}
+.about__detail__content span
+{
+    color: #494949;       
+}
+.about__detail__content>p
+{
+    padding: 0 1.5vw;
+    margin-top: 1vw; 
+}
+
+.about__details>div:nth-child(1)
+{
+    left: 0em;    
+}
+.about__details>div:nth-child(2)
+{
+    left: 1em;    
+}
+.about__details>div:nth-child(3)
+{
+    left: 2em;    
+}
+.about__details>div:nth-child(4)
+{
+    left: 3em;    
+}
+.about__details>div:nth-child(5)
+{
+    left: 4em;    
+}
+.about__details>div:nth-child(6)
+{
+    left: 5em;    
+}
+.about__details>div:nth-child(7)
+{
+    left: 6em;    
+}
+
+.about__detail__btnClose
+{
+    cursor: pointer;
+    position: absolute;    
+    width: 50px;
+    height: 50px;
+    top: 0;
+    right: 0; 
+    background: url(../images/common/btnClose.png) no-repeat center center;
+}
+/*** 详细信息 结束 ***/
+/*** 左右切换按钮 开始 ***/
+.about__btnLeft
+{
+    cursor: pointer;
+    position: absolute;    
+    width: 5.61vw;
+    height: 5.61vw;
+    margin-top: -2.805vw;
+    left: 0;
+    top: 50%;
+    background: url(../images/common/btnLeft.png) no-repeat;
+    background-position: left center;
+}
+.about__btnRight
+{
+    cursor: pointer;
+    position: absolute;
+    width: 5.61vw;
+    height: 5.61vw;
+    margin-top: -2.805vw;
+    right: 0;
+    top: 50%;    
+    background: url(../images/common/btnRight.png) no-repeat;
+    background-position: right center;
+}
+/*** 左右切换按钮 结束 ***/
+
+
+
+@media screen and (max-width:480px)
+{
+    html,body
+    {
+        min-height: auto;
+    }
+    .about
+    {
+        width: 100%;
+        height: calc(100% - 40px);
+        left: 0;
+        top: 40px;
+    }
+    .about__cards__wrapper
+    {
+        width: 100%;     
+        left: 0;        
+    }
+    .about__cards
+    {
+        width: 70%;
+    }
+    .about__card
+    {        
+        width:100%;           
+    }
+    .about__card__title
+    {
+        font-size: 16px;
+    }    
+    .about__card__content__img
+    {
+        width: 30vw;
+        height: 30vw;
+        margin-left: -15vw;
+    }
+    .about__card__content__headline
+    {
+        font-size: 12px;
+    }
+            
+    .about__card__content__btnReadMore
+    {
+        width: 30vw;
+        height: 9vw;
+        margin-left: -15vw;
+        font-size: 12px;
+        line-height: 9vw;
+        border-radius: 4.5vw;
+    }
+    .about__btnLeft
+    {
+        width: 9.75vw;
+        height: 9.75vw;
+        margin-top: -4.875vw;
+        background-size: contain;
+        background-position: center center;
+    }
+    .about__btnRight
+    {
+        width: 9.75vw;
+        height: 9.75vw;
+        margin-top: -4.875vw;
+        background-size: contain;
+        background-position: center center;
+    }
+    
+    
+    .about__details__wrapper
+    {
+        width: 80.5%;/*70x1.15=80.5*/
+        height: 80.5%;
+        left: 9.75%;
+        top: 9.75%;      
+    }
+    .about__detail__img
+    {
+        height: 100px;           
+    }    
+    .about__detail__headline
+    {
+        font-size: 8px;        
+        padding: 40px 20px;
+    }
+    
+    .about__detail__headline>span
+    {
+        font-size: 16px;        
+    }
+    
+    .about__detail__content
+    {
+        font-size: 9px;
+        height: calc(100% - 100px);
+    }
+    
+    .about__detail__content>h2
+    {    
+        font-size: 14px;
+        padding: 0 20px;
+        margin-top: 15px;    
+    }
+    
+    .about__detail__content>p
+    {
+        padding: 0 20px;
+        margin-top: 10px; 
+    }
+    
+    .about__detail__btnClose
+    {
+        width: 40px;
+        height: 40px;
+        background-size: 20px 20px;
+    }    
+}
+
+
