@@ -38,7 +38,7 @@
     
     function enterOurWorks(e)
     {        
-        e.preventDefault();
+        //e.preventDefault();//需要改变window.location这个默认样式
         tweenInWorks(0.5);                
     }
     
