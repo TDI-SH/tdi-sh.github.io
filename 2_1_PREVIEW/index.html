@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>Irobot</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <link href="common/css/screen.css" rel="stylesheet" type="text/css" media="screen" />
+  <script type="text/javascript" src="common/js/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="common/js/jquery.colorbox-min.js"></script>
+  <script type="text/javascript" src="common/js/swfobject.js"></script>
+  <script type="text/javascript">
+    $(function(){
+		$(".flash").click(function(){
+      var screenW = $(window).width();
+      var screenH = $(window).height();
+      var popImgW = $(this).attr('width');
+      var popImgH = $(this).attr('height');
+      var popSrc = $(this).attr("src");
+      var popTitle = $(this).attr("title");
+
+      $('#view-pop .view-title').html(popTitle);
+
+      $('#view-pop .view-main').css({
+        'width':popImgW,
+        'height':popImgH
+      })
+     
+      console.log(popSrc,popSrc.substring(0,3));
+      var htmlStr = '';
+
+      if(popSrc.substring(0,3)=='swf'){
+        htmlStr+='<div id="inline_content"></div>';
+        $('#view-pop .view-main').html(htmlStr);
+        swfobject.embedSWF(popSrc, "inline_content", popImgW, popImgH, "9.0.0", "expressInstall.swf");
+      }else if(popSrc.substring(0,3)=='jpg'){
+        htmlStr+='<img src="'+popSrc+'" alt="" />';
+        $('#view-pop .view-main').html(htmlStr);
+      }else{
+        htmlStr+='<iframe src="'+popSrc+'" width="'+popImgW+'" height="'+popImgH+'" frameborder="0" scrolling="no"></iframe>';
+        $('#view-pop .view-main').html(htmlStr);
+      }
+
+
+      var popWidth = parseInt(popImgW)+100;
+      var popHeight = parseInt(popImgH)+120;
+      var marL,marT;
+
+      marL = popWidth >= screenW ? 0 : (screenW - popWidth) / 2;
+      marT = popHeight >= screenH ? 0 : (screenH - popHeight) / 2;
+
+      $('#view-pop').css({
+        'width':popWidth,
+        'height':popHeight,
+        'left':marL,
+        'top':marT
+      })
+
+      $('#view-pop,#pop-cover').fadeIn();
+
+      $('#view-pop .view-title,#view-pop .closeBtn,#pop-cover').unbind('ontouchstart click').bind('ontouchstart click',function(){
+        $('#view-pop,#pop-cover').fadeOut();
+      })
+
+		});
+	});
+  </script>
+</head>
+
+<body>
+  <div id="frame">
+    <div id="logo"><img src="common/images/logo.png" alt="logo" /></div>
+    <div id="container">
+      <h1>iRobot_Braava_jet_JP</h1>
+
+
+
+      <h2>html5</h2>
+      <ul>
+        <li><a class="flash" href="#inline_content" src="H5/Everyday/300x250/index.html" width="300" height="250" title="Everyday_300x250">Everyday_300x250</a></li>
+        <li><a class="flash" href="#inline_content" src="H5/Juice/300x250/index.html" width="300" height="250" title="Juice_300x250">Juice_300x250</a></li>
+        <li><a class="flash" href="#inline_content" src="H5/Kitchen/300x250/index.html" width="300" height="250" title="Kitchen_300x250">Kitchen_300x250</a></li>
+      </ul>
+
+
+      <div id="view-pop">
+        <div class="view-title"></div>
+        <div class="view-container">
+          <a href="javascript:void(0)" class="closeBtn"></a>
+          <div class="view-main">
+            <!-- <img src="" id="view-pic" alt="" /> -->
+          </div>
+        </div>
+      </div>
+      <div id="pop-cover"></div>
+      <div align="right"><img src="common/images/tag_logo.gif" width="150" height="80" alt="" /></div>
+    </div>
+  </div>
+</body>
+
+</html>
