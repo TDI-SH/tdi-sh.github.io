@@ -38,6 +38,7 @@ html,body
     height: 60%;
     left: 0px;
     top: 20%;
+    font-size: 100vw;/*修复加载时重叠显示*/
     /*border: solid #00ff00 1px;*/
 }
 .about__card
