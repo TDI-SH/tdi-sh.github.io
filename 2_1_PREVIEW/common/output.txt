@@ -1,3 +1,0 @@
-<li><a class="flash" href="#inline_content" src="H5/Everyday/300x250/index.html" width="300" height="250" title="300x250">300x250</a></li>
-<li><a class="flash" href="#inline_content" src="H5/Juice/300x250/index.html" width="300" height="250" title="300x250">300x250</a></li>
-<li><a class="flash" href="#inline_content" src="H5/Kitchen/300x250/index.html" width="300" height="250" title="300x250">300x250</a></li>
