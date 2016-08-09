@@ -1,0 +1,51 @@
+`<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>TDI SHANG HAI</title>
+<link href="http://preview.williamsleatag.cn/Preview/public/css/style.css" rel="stylesheet" type="text/css" media="screen"/>
+<style>
+/* SET THE WIDTH OF YOUR SWF, STATIC, OR VIDEO  HERE - !!THIS IS IMPORTANT!! */
+#main {
+	/* CHANGE THIS WIDTH TO THE WIDTH OF YOUR UNIT */
+	width: ${width}px;
+	height: auto;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+iframe {
+	overflow: hidden;
+}
+</style>
+</head>
+<body>
+<div id="wrapper"> 
+  <!-- HEADER CONTENT-->
+  <header> 
+    <script>
+            document.write('<a href="' + document.referrer + '"><img src="http://preview.williamsleatag.cn/Preview/public/image/logo.jpg" alt="logo" id="logo"/></a>');
+        </script> 
+    <!-- CHANGE CLIENT AND CAMPAIGN NAMES HERE -->
+    <h1 id="client_name">${clientName}</h1>
+    <h2 id="campaign_name">${campaignName}</h2>
+  </header>
+  <div id="main">
+    <div id="unit_info">
+      <h3>${showName?name:`${width}X${height}`}</h3>
+      <ul>
+        <li> 
+          <script>
+                    document.write('<a href="' + document.referrer + '">BACK &lt;</a>');
+                </script> 
+        </li>
+      </ul>
+    </div>
+    <img src="${url}" width="${width}" height="${height}" alt="" frameborder="0"> </div>
+  <!-- FOOTER CONTENT DO NOT EDIT -->
+  <footer>
+    <p class="contact">淮海西路570号红坊创意园201-202室 &#8226; 中国, 上海 &#8226; <nobr>T +86 (21) 5254 0158 &#8226; F +86 (21) 5254 0168 &#8226; <a href="http://www.wlt.com/">wlt.com</a></nobr> </p>
+  </footer>
+</div>
+<script type="text/javascript" src="http://preview.williamsleatag.cn/Preview/public/js/checktag.js"></script>
+</body>
+</html>`
