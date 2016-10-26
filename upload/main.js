@@ -16,16 +16,12 @@
 
 
         function loadFileComplete(e) {
+            console.log('load complete');
             var img = new Image();
             img.src = e.target.result;
 
-            var cw=img.width>>1;
-            var ch=img.height>>1;
-
-            canvas.width = cw;
-            canvas.height = ch;
-
-            ctx.drawImage(img, 0, 0,cw,ch);
+            ctx.clearRect(0,0,320,240);
+            ctx.drawImage(img, 0, 0);
         }
 
         fr.readAsDataURL(file);
