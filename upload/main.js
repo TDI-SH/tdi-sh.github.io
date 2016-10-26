@@ -1,6 +1,7 @@
 (function () {
-    var canvas = document.querySelector('canvas');
-    var ctx = canvas.getContext('2d');
+    //var canvas = document.querySelector('canvas');
+    //var ctx = canvas.getContext('2d');
+    var img=document.querySelector('img');
 
     var input = document.querySelector('input[type=file]');
     input.addEventListener('change', handleSelectFile, false);
@@ -17,11 +18,12 @@
 
         function loadFileComplete(e) {
             console.log('load complete');
-            var img = new Image();
+            //var img = new Image();
             img.src = e.target.result;
+            document.body.appendChild(img);
 
-            ctx.clearRect(0,0,320,240);
-            ctx.drawImage(img, 0, 0);
+            //ctx.clearRect(0,0,320,240);
+            //ctx.drawImage(img, 0, 0);
         }
 
         fr.readAsDataURL(file);
