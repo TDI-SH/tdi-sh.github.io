@@ -1,0 +1,33 @@
+html,body,canvas,div,input
+{
+    margin: 0;
+    padding: 0;
+}
+
+.input-visual
+{
+    width: 100px;
+    line-height: 30px;
+    background-color: #ff5511;
+    border-radius: 3px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;   
+}
+
+.input-wrapper
+{
+    position: relative;
+}
+
+input
+{
+    position: absolute;    
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 30px;
+    opacity: 0;
+    cursor: pointer;    
+}
