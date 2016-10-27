@@ -1,7 +1,12 @@
-html,body,canvas,div,input
+html,body,canvas,div,input,p,img
 {
     margin: 0;
     padding: 0;
+}
+
+img
+{
+    max-width: 100%;
 }
 
 .input-visual
@@ -31,3 +36,5 @@ input
     opacity: 0;
     cursor: pointer;    
 }
+
+
